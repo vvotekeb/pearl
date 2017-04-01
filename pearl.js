@@ -3,8 +3,8 @@
 const request = require('request-promise');
 
 function Pearl(assistantName, assistantLocation) {
-	this.virtualAssistantUrl = 'https://va.justanswer.com/chat';
-	this.categorizerUrl = 'https://categorizer.passat.lviv.ua/categorize';
+	this.virtualAssistantUrl = process.env.VIRTUAL_ASSISTANT_URL;
+	this.categorizerUrl = process.env.CATEGORIZER_URL;
 	this.botName = 'Pearl_28_6_bot';
 	this.generalCategoryId = 'e81d93770fc54eff844de09739e331e5';
 	this.partnerId = 'b33305aa2f8441cebfd8bab8b3f3a3da';
@@ -84,7 +84,7 @@ function Pearl(assistantName, assistantLocation) {
 					LocationUrl: this.assistant.locationUrl,
 					CategoryId: categoryId ||this.generalCategoryId,
 					ChatType: "FunnelQuestion",
-					BotName: "Pearl_28_6_bot"
+					BotName: this.botName
 				}
 			}
 		});
