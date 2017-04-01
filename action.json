@@ -1,0 +1,18 @@
+{
+  "versionLabel": "1.0.0",
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "pearl-160516",
+    "voiceName": "female_1"
+  },
+  "actions": [
+    {
+      "initialTrigger": {
+        "intent": "assistant.intent.action.MAIN"
+      },
+      "httpExecution": {
+        "url": "https://lit-hamlet-95610.herokuapp.com/google-assistant"
+      }
+    }
+  ]
+}

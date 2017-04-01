@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Text",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "RawText"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

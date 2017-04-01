@@ -1,0 +1,20 @@
+{
+  "name": "Pearl",
+  "version": "1.0.0",
+  "description": "Pearl integration with Amazon Alexa and Google Assistant",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Y.Beketov",
+  "license": "ISC",
+  "dependencies": {
+    "actions-on-google": "^1.0.8",
+    "alexa-verifier": "^0.3.0",
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "request": "^2.80.0",
+    "request-promise": "^4.1.1"
+  }
+}
